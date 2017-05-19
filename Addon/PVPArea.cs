@@ -8,7 +8,7 @@ using UnityEngine.Networking;
 public partial class Player
 {
     [Header("Player Vs Player System")]
-    [SyncVar_] public int MinLevel= 0;
+    [SyncVar_] public int MinLevel = 0;
     [SyncVar_] public float StartPos = 0;
     [SyncVar_] public float EndPos = 0;
 
