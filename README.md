@@ -3,6 +3,19 @@ Allows you set safe zones in the world.
 
 - Still in early development.
 
+```CSharp
+//player is attackable & checks minimum level
+    if(entity is Player && IsAttackable()) {
+        if (level < MinLevel || target.level < MinLevel) {
+            return;
+        }
+    //player is in safe zone
+    } else if (entity is Player && IsSafeZone()) {
+        Debug.Log("You cannot attack a player in safe zone.");
+        return;
+    }
+```
+
 # Usage
 
 1. Create the safe zone.
